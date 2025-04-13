@@ -11,7 +11,7 @@ export default function Home() {
         >
 
         {/* Overlay */}
-        <div className="absolute inset-0 bg-black/20"></div>
+        <div className="absolute inset-0 bg-black/00"></div>
 
         {/* Social Icons - absolutely positioned at the top */}
         <div className="absolute top-6 left-1/2 transform -translate-x-1/2 z-20 flex space-x-10">
@@ -252,7 +252,7 @@ export default function Home() {
             joshjilot@gmail.com
             </a>{" "}
             or connect with me on{" "}
-            <a href="https://linkedin.com/in/yourlinkedin" className="text-blue-600 hover:underline" target="_blank">
+            <a href="https://linkedin.com/in/josh-jilot-4620472b2/" className="text-blue-600 hover:underline" target="_blank">
             LinkedIn
             </a>.
         </p>
