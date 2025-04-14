@@ -56,18 +56,18 @@ export default function Home() {
             backgroundImage: "linear-gradient(to bottom, black, #0f1010 50px, #0f1010 100%)",
             backgroundRepeat: "no-repeat",
             backgroundSize: "100% 100px",
-            backgroundColor: "#0f1010", // fallback solid bg
+            backgroundColor: "#0f1010",
           }}>
             <h1 className="text-5xl font-bold mb-20 text-center">About Me</h1>
             {/* Intro */}
-            <div className="flex flex-col md:flex-row items-center md:items-start text-center md:text-left max-w-5xl mx-auto mb-16 gap-8">
+            <div className="flex flex-col md:flex-row items-center md:items-start text-center md:text-left max-w-2xl mx-auto mb-16 gap-8">
                 <img
                 src="/me.jpg"
                 alt="Headshot of Josh Jilot"
-                className="w-40 h-40 rounded-full object-cover object-left shadow-lg"
+                className="w-40 h-40 rounded-full object-cover object-left shadow-lg border-2 [border-color:#43cc88]"
                 />
                 <p className="text-lg leading-relaxed">
-                Hi! I'm Josh, a software engineering student passionate about clean code, full-stack development, and turning ideas into practical solutions.
+                Hi! I'm Josh, a software engineering student passionate about clean code, full-stack development, and turning ideas into practical solutions. I am also going to type some ore text in here to test the border
                 </p>
             </div>
 
@@ -81,13 +81,9 @@ export default function Home() {
                 </div>
                 <div>
                 <h3 className="text-2xl font-semibold mb-2">Skills</h3>
-                <ul className="list-disc list-inside">
-                    <li>JavaScript / TypeScript</li>
-                    <li>React & Tailwind</li>
-                    <li>Python & Flask</li>
-                    <li>SQL / SQLite</li>
-                    <li>Swift & iOS development</li>
-                </ul>
+                <p>
+                    I love learning new technologies, building meaningful projects, and collaborating on creative solutions. Outside of coding, I enjoy stargazing, photography, and tinkering with side projects.
+                </p>
                 </div>
             </div>
 
