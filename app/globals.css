@@ -1,21 +1,18 @@
 @import "tailwindcss";
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
+/* Define fallback color variables (light mode) */
 :root {
   --background: #ffffff;
-  --foreground: #171717;
+  --foreground: #0f1010;
+
+  --color-background: #ffffff;
+  --color-foreground: #0f1010;
+
+  --font-sans: Arial, Helvetica, sans-serif;
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, monospace;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
+/* Dark mode overrides */
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
@@ -23,41 +20,42 @@
   }
 }
 
+/* Base styles */
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: 'Times New Roman', Times, serif; /* body font */
+  font-family: 'Times New Roman', Times, serif;
 }
 
-h1, h2, h3, h4, h5, h6{
-    font-family: 'Arial', Helvetica, sans-serif; /* title font */
-  }
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-sans);
+}
 
+/* Custom color utility classes */
 .bg-cool-black {
-    background-color: #0f1010;
+  background-color: #0f1010;
 }
 
 .bg-cool-gray {
-    background-color: #1a1c1c;
+  background-color: #1a1c1c;
 }
 
 .bg-aurora-green {
-    background-color: #43cc88;
+  background-color: #43cc88;
 }
 
 .bg-aurora-magenta {
-    background-color: #c82087;
+  background-color: #c82087;
 }
 
 .bg-aurora-purple {
-    background-color: #8821ad;
+  background-color: #8821ad;
 }
 
 .bg-aurora-yellow {
-    background-color: #dbb957;
+  background-color: #dbb957;
 }
 
 .bg-aurora-blue {
-    background-color: #187795;
+  background-color: #187795;
 }
-

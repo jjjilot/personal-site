@@ -32,10 +32,10 @@ export default function Home() {
             style={{ textShadow: "2px 2px 4px rgba(0, 0, 0, 0.5)" }}
         >
             <h1 className="text-8xl font-bold mb-4">Josh Jilot</h1>
-            <p className="text-xl max-w-xl text-gray-300">
+            <p className="text-xl max-w-xl">
             Aspiring Software Engineer passionate about building code designed to improve lives of users and future developers alike.
             </p>
-            <nav className="mt-10 flex space-x-6 text-gray-200">
+            <nav className="mt-10 flex space-x-6">
             <a href="#about" className="hover:underline">About</a>
             <div className="border-l border-gray-375 h-5"></div>
             <a href="#projects" className="hover:underline">Projects</a>
@@ -64,10 +64,10 @@ export default function Home() {
                 <img
                 src="/me.jpg"
                 alt="Headshot of Josh Jilot"
-                className="w-40 h-40 rounded-full object-cover object-left shadow-lg border-2 [border-color:#43cc88]"
+                className="w-40 h-40 rounded-full object-cover object-left shadow-lg border-2 [border:#c82087]"
                 />
                 <p className="text-lg leading-relaxed">
-                Hi! I'm Josh, a software engineering student passionate about clean code, full-stack development, and turning ideas into practical solutions. I am also going to type some ore text in here to test the border
+                Hi :) thanks
                 </p>
             </div>
 
@@ -115,18 +115,18 @@ export default function Home() {
         <h2 className="text-3xl font-semibold mb-8">Projects</h2>
         <div className="grid gap-8 max-w-4xl mx-auto">
             {/* Project 1 */}
-            <div className="border rounded p-6 shadow-sm text-left cursor-pointer transition-all duration-300 hover:bg-gray-50 flex flex-col md:flex-row items-center md:items-start">
+            <div className="border rounded p-6 shadow-sm text-left cursor-pointer transition-all duration-300 hover:bg-gray-600 flex flex-col md:flex-row items-center md:items-start">
             <div className="flex-1 md:mr-6">
                 <h3 className="text-xl font-bold mb-2">PatternAuth</h3>
-                <p className="text-gray-700 mb-2">
+                <p>
                 Three-factor authentication system with iOS + web integration.
                 </p>
                 <div className="mt-4 space-y-3">
-                <p className="text-gray-600">
+                <p>
                     This project implements three-factor authentication using password, Face ID, and pattern-based login. Built with SwiftUI, FastAPI, SQLite, and React.
                 </p>
                 <a
-                    href="https://github.com/yourusername/patternauth"  /* Replace with your GitHub link */
+                    href="https://github.com/jjjilot/PatternAuth"  /* Replace with your GitHub link */
                     className="text-blue-600 hover:underline"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -145,18 +145,18 @@ export default function Home() {
             </div>
 
             {/* Project 2 */}
-            <div className="border rounded p-6 shadow-sm text-left cursor-pointer transition-all duration-300 hover:bg-gray-50 flex flex-col md:flex-row items-center md:items-start">
+            <div className="border rounded p-6 shadow-sm text-left cursor-pointer transition-all duration-300 hover:bg-gray-600 flex flex-col md:flex-row items-center md:items-start">
             <div className="flex-1 md:mr-6">
-                <h3 className="text-xl font-bold mb-2">MyPortfolio</h3>
-                <p className="text-gray-700 mb-2">
+                <h3 className="text-xl font-bold mb-2">PeaceHealth Bike Stats</h3>
+                <p>
                 Responsive portfolio site built with Next.js and Tailwind CSS.
                 </p>
                 <div className="mt-4 space-y-3">
-                <p className="text-gray-600">
+                <p>
                     This personal website showcases my projects, skills, and experience. Built using Next.js and styled with Tailwind CSS.
                 </p>
                 <a
-                    href="https://github.com/yourusername/myportfolio"  /* Replace with your GitHub link */
+                    href="https://github.com/jjjilot/PH-Bike-Stats"  /* Replace with your GitHub link */
                     className="text-blue-600 hover:underline"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -168,25 +168,25 @@ export default function Home() {
             <div className="flex-shrink-0 w-full md:w-1/3 mt-6 md:mt-0">
                 <img
                 src="/images/portfolio.png"  /* Replace with your project image */
-                alt="MyPortfolio project"
+                alt="PH Bike Stats project"
                 className="w-full h-auto rounded"
                 />
             </div>
             </div>
 
             {/* Project 3 */}
-            <div className="border rounded p-6 shadow-sm text-left cursor-pointer transition-all duration-300 hover:bg-gray-50 flex flex-col md:flex-row items-center md:items-start">
+            <div className="border rounded p-6 shadow-sm text-left cursor-pointer transition-all duration-300 hover:bg-gray-600 flex flex-col md:flex-row items-center md:items-start">
             <div className="flex-1 md:mr-6">
-                <h3 className="text-xl font-bold mb-2">PatternAuth</h3>
-                <p className="text-gray-700 mb-2">
+                <h3 className="text-xl font-bold mb-2">Personal Site</h3>
+                <p>
                 Three-factor authentication system with iOS + web integration.
                 </p>
                 <div className="mt-4 space-y-3">
-                <p className="text-gray-600">
+                <p>
                     This project implements three-factor authentication using password, Face ID, and pattern-based login. Built with SwiftUI, FastAPI, SQLite, and React.
                 </p>
                 <a
-                    href="https://github.com/yourusername/patternauth"  /* Replace with your GitHub link */
+                    href="https://github.com/jjjilot/personal-site"  /* Replace with your GitHub link */
                     className="text-blue-600 hover:underline"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -198,7 +198,7 @@ export default function Home() {
             <div className="flex-shrink-0 w-full md:w-1/3 mt-6 md:mt-0">
                 <img
                 src="/images/patternauth.png"  /* Replace with your project image */
-                alt="PatternAuth project"
+                alt="Personal Site project"
                 className="w-full h-auto rounded"
                 />
             </div>
@@ -207,7 +207,7 @@ export default function Home() {
             {/* Project 4 */}
             <div className="border rounded p-6 shadow-sm text-left cursor-pointer transition-all duration-300 hover:bg-gray-50 flex flex-col md:flex-row items-center md:items-start">
             <div className="flex-1 md:mr-6">
-                <h3 className="text-xl font-bold mb-2">PatternAuth</h3>
+                <h3 className="text-xl font-bold mb-2">The Duck Bank</h3>
                 <p className="text-gray-700 mb-2">
                 Three-factor authentication system with iOS + web integration.
                 </p>
@@ -216,7 +216,7 @@ export default function Home() {
                     This project implements three-factor authentication using password, Face ID, and pattern-based login. Built with SwiftUI, FastAPI, SQLite, and React.
                 </p>
                 <a
-                    href="https://github.com/yourusername/patternauth"  /* Replace with your GitHub link */
+                    href="https://github.com/jjjilot/CS415/tree/main/project_3"  /* Replace with your GitHub link */
                     className="text-blue-600 hover:underline"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -228,14 +228,71 @@ export default function Home() {
             <div className="flex-shrink-0 w-full md:w-1/3 mt-6 md:mt-0">
                 <img
                 src="/images/patternauth.png"  /* Replace with your project image */
-                alt="PatternAuth project"
+                alt="Duck Bank project"
                 className="w-full h-auto rounded"
                 />
             </div>
             </div>
 
+            {/* Project 5 */}
+            <div className="border rounded p-6 shadow-sm text-left cursor-pointer transition-all duration-300 hover:bg-gray-50 flex flex-col md:flex-row items-center md:items-start">
+            <div className="flex-1 md:mr-6">
+                <h3 className="text-xl font-bold mb-2">OOP Red-Black Tree</h3>
+                <p className="text-gray-700 mb-2">
+                Three-factor authentication system with iOS + web integration.
+                </p>
+                <div className="mt-4 space-y-3">
+                <p className="text-gray-600">
+                    This project implements three-factor authentication using password, Face ID, and pattern-based login. Built with SwiftUI, FastAPI, SQLite, and React.
+                </p>
+                <a
+                    href="https://github.com/jjjilot/CS330/tree/main/homework08"  /* Replace with your GitHub link */
+                    className="text-blue-600 hover:underline"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    View on GitHub
+                </a>
+                </div>
+            </div>
+            <div className="flex-shrink-0 w-full md:w-1/3 mt-6 md:mt-0">
+                <img
+                src="/images/patternauth.png"  /* Replace with your project image */
+                alt="RB Tree project"
+                className="w-full h-auto rounded"
+                />
+            </div>
+            </div>
 
-            {/* Add more projects as needed */}
+            {/* Project 6 */}
+            <div className="border rounded p-6 shadow-sm text-left cursor-pointer transition-all duration-300 hover:bg-gray-50 flex flex-col md:flex-row items-center md:items-start">
+            <div className="flex-1 md:mr-6">
+                <h3 className="text-xl font-bold mb-2">University of Oregon Portfolio</h3>
+                <p className="text-gray-700 mb-2">
+                Three-factor authentication system with iOS + web integration.
+                </p>
+                <div className="mt-4 space-y-3">
+                <p className="text-gray-600">
+                    This project implements three-factor authentication using password, Face ID, and pattern-based login. Built with SwiftUI, FastAPI, SQLite, and React.
+                </p>
+                <a
+                    href="https://github.com/jjjilot/UO-CS-classes"  /* Replace with your GitHub link */
+                    className="text-blue-600 hover:underline"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    View on GitHub
+                </a>
+                </div>
+            </div>
+            <div className="flex-shrink-0 w-full md:w-1/3 mt-6 md:mt-0">
+                <img
+                src="/images/patternauth.png"  /* Replace with your project image */
+                alt="UO Classes project"
+                className="w-full h-auto rounded"
+                />
+            </div>
+            </div>
         </div>
         </section>
   

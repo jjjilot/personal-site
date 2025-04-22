@@ -8,6 +8,9 @@ module.exports = {
     theme: {
       extend: {
         colors: {
+          // Rename or duplicate keys if you want "background" and "foreground"
+          background: '#0f1010',   // ← can now use theme(colors.background)
+          foreground: '#ffffff',   // ← fallback light text
           'cool-black': '#0f1010',
           'aurora-green': '#43cc88',
           'aurora-magenta': '#c82087',
@@ -18,10 +21,8 @@ module.exports = {
         fontFamily: {
           body: ['Times New Roman', 'Times', 'serif'],
           title: ['Arial', 'Helvetica', 'sans-serif'],
-        }
+        },
       },
     },
-    plugins: [
-        require('@tailwindcss/line-clamp'),
-    ],
+    plugins: [require('@tailwindcss/line-clamp')],
   }
