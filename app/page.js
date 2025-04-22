@@ -7,7 +7,7 @@ export default function Home() {
         <section
         id="home"
         className="h-screen bg-cover bg-center relative" 
-        style={{ backgroundImage: "url('/observatory.jpg')" }}
+        style={{ backgroundImage: "url('/observatory-fixed.jpg')" }}
         >
 
         {/* Overlay */}
