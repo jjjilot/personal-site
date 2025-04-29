@@ -16,7 +16,13 @@
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
-    --foreground: #ededed;
+    --foreground: #ffffff;
+  }
+}
+
+@layer base {
+  p {
+    @apply text-gray-500 text-base;
   }
 }
 
@@ -24,7 +30,9 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: 'Times New Roman', Times, serif;
+  font-family: 'Arial',
+    'Helvetica',
+    'sans-serif';
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -58,4 +66,46 @@ h1, h2, h3, h4, h5, h6 {
 
 .bg-aurora-blue {
   background-color: #187795;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.animate-shimmer {
+  background-size: 200% 200%;
+  animation: shimmer 5s ease-in-out infinite;
+}
+
+.hover-shimmer {
+  position: relative;
+  display: inline-block;
+  color: #2dceff;
+  /* Normal color */
+  transition: all 0.5s ease;
+}
+
+.hover-shimmer:hover {
+  background-image: linear-gradient(to right,
+      #c82087,
+      #8821ad,
+      #187795,
+      #43cc88,
+      #dbb957);
+  background-size: 200% 200%;
+  background-position: 0% 50%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  animation: shimmer 5s ease-in-out infinite;
 }

@@ -4,6 +4,26 @@ import { useEffect, useRef, useState } from 'react';
 import Script from 'next/script';
 import { EnvelopeIcon } from '@heroicons/react/24/outline';
 
+function ShimmerTitle({ text, className = "" }) {
+  return (
+    <h1
+      className={`text-5xl font-bold bg-gradient-to-r from-[#c82087] via-[#8821ad] via-[#187795] via-[#43cc88] to-[#dbb957] bg-clip-text text-transparent animate-shimmer ${className}`}
+    >
+      {text}
+    </h1>
+  );
+}
+
+function ShimmerText({ text, className = "" }) {
+  return (
+    <h1
+      className={`text-2xl font-bold bg-gradient-to-r from-[#c82087] via-[#8821ad] via-[#187795] via-[#43cc88] to-[#dbb957] bg-clip-text text-transparent animate-shimmer ${className}`}
+    >
+      {text}
+    </h1>
+  );
+}
+
 export default function Home() {
     const projectsRef = useRef(null);
     const [vantaEffect, setVantaEffect] = useState(null);
@@ -64,11 +84,11 @@ export default function Home() {
           <div className="relative z-10 h-full flex flex-col justify-start items-center text-center text-white px-4 pt-64"
             style={{ textShadow: "2px 2px 4px rgba(0, 0, 0, 0.5)" }}>
             <h1 className="text-8xl font-bold mb-4">Josh Jilot</h1>
-            <nav className="mt-6 flex space-x-8">
+            <nav className="mt-6 flex space-x-8 text-xl">
               <a href="#about" className="hover:underline">About</a>
-              <div className="border-l border-gray-375 h-5"></div>
+              <span>|</span>
               <a href="#projects" className="hover:underline">Projects</a>
-              <div className="border-l border-gray-375 h-5"></div>
+              <span>|</span>
               <a href="#contact" className="hover:underline">Contact</a>
             </nav>
           </div>
@@ -87,25 +107,32 @@ export default function Home() {
             backgroundSize: "100% 100px",
             backgroundColor: "#0f1010",
           }}>
-          <h1 className="text-5xl font-bold mb-20 text-center">About Me</h1>
+          <ShimmerTitle text="About Me" className="mb-20 text-center" />
           
           <div className="flex flex-col md:flex-row items-center md:items-start text-center md:text-left max-w-2xl mx-auto mb-16 gap-8">
-            <img src="/me.jpg" alt="Headshot of Josh Jilot" className="w-40 h-40 rounded-full object-cover object-left shadow-lg border-2 [border:#c82087]" />
-            <p className="text-lg leading-relaxed">
-              this is filler text and it doesn't really matter what it says because I just need it to take up space so I can test how the formatting of this section looks
+            <img src="/me.jpg" alt="Headshot of Josh Jilot" className="w-60 h-60 rounded-full object-cover object-left shadow-lg border-2 [border-color:#43cc88]" />
+            <p className="text-lg leading-relaxed text-gray-400">
+              Hello, my name is Josh Jilot and I am a computer science student at the University of Oregon. 
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-5xl mx-auto mb-16">
             <div>
-              <h3 className="text-2xl font-semibold mb-2">Bio</h3>
-              <p>
-                I love learning new technologies, building meaningful projects, and collaborating on creative solutions. Outside of coding, I enjoy stargazing, photography, and tinkering with side projects.
+              <h3 className="text-2xl font-semibold mb-2 tracking-widest font-light">Programming Passion</h3>
+              <p className="leading-relaxed">
+                <br />
+                From programming an army of Sparki robots to sing the Tetris theme song in high school to building this
+                entire website in a language brand-new to me, I have always been up to the challenge of a new programming project.
+                <br />
+                <br />
+                As I worked my way through my Computer Science degree as a Duck, I solidified my enjoyment for programming while
+                discovering an appetite to craft code that helps those around me.
               </p>
             </div>
             <div>
-              <h3 className="text-2xl font-semibold mb-2">Skills</h3>
+              <h3 className="text-2xl font-semibold mb-2 tracking-widest font-light">Skills</h3>
               <p>
+                <br />
                 I love learning new technologies, building meaningful projects, and collaborating on creative solutions. Outside of coding, I enjoy stargazing, photography, and tinkering with side projects.
               </p>
             </div>
@@ -137,8 +164,6 @@ export default function Home() {
 
           <div className="relative z-10" style={{ textShadow: "0 2px 4px rgba(0, 0, 0, 0.7)" }}>
             <h2 className="text-5xl font-semibold mb-8 text-white">Projects</h2>
-
-
             <div className="grid gap-8 max-w-4xl mx-auto">
             {/* Project 1 */}
               <div className="rounded p-6 shadow-sm text-left cursor-pointer transition-all duration-300 hover:bg-gray-600 flex flex-col md:flex-row items-center md:items-start bg-cool-gray bg-opacity-40 backdrop-blur-sm">
@@ -149,14 +174,14 @@ export default function Home() {
                 <p>
                     This project implements three-factor authentication using password, Face ID, and pattern-based login. Built with SwiftUI, FastAPI, SQLite, and React.
                 </p>
-                <a
-                    href="https://github.com/jjjilot/PatternAuth"
-                    className="text-blue-600 hover:underline"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    View on GitHub
-                </a>
+                    <a
+                      href="https://github.com/jjjilot/PatternAuth"
+                      className="hover-shimmer"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      View on GitHub
+                    </a>
                 </div>
             </div>
             <div className="flex-shrink-0 w-full md:w-1/3 mt-6 md:mt-0">
@@ -177,14 +202,14 @@ export default function Home() {
                 <p>
                     This personal website showcases my projects, skills, and experience. Built using Next.js and styled with Tailwind CSS.
                 </p>
-                <a
-                    href="https://github.com/jjjilot/PH-Bike-Stats"
-                    className="text-blue-600 hover:underline"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    View on GitHub
-                </a>
+                    <a
+                      href="https://github.com/jjjilot/PH-Bike-Stats"
+                      className="hover-shimmer"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      View on GitHub
+                    </a>
                 </div>
             </div>
             <div className="flex-shrink-0 w-full md:w-1/3 mt-6 md:mt-0">
@@ -205,14 +230,14 @@ export default function Home() {
                 <p>
                     This project implements three-factor authentication using password, Face ID, and pattern-based login. Built with SwiftUI, FastAPI, SQLite, and React.
                 </p>
-                <a
-                    href="https://github.com/jjjilot/personal-site"
-                    className="text-blue-600 hover:underline"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    View on GitHub
-                </a>
+                    <a
+                      href="https://github.com/jjjilot/personal-site"
+                      className="hover-shimmer"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      View on GitHub
+                    </a>
                 </div>
             </div>
             <div className="flex-shrink-0 w-full md:w-1/3 mt-6 md:mt-0">
@@ -235,7 +260,7 @@ export default function Home() {
                     </p>
                     <a
                       href="https://github.com/jjjilot/CS330/tree/main/homework08"
-                      className="text-blue-600 hover:underline"
+                      className="hover-shimmer"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
@@ -263,7 +288,7 @@ export default function Home() {
                     </p>
                     <a
                       href="https://github.com/jjjilot/CS415/tree/main/project_3"
-                      className="text-blue-600 hover:underline"
+                      className="hover-shimmer"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
@@ -289,14 +314,14 @@ export default function Home() {
                 <p className="text-gray-600">
                     This project implements three-factor authentication using password, Face ID, and pattern-based login. Built with SwiftUI, FastAPI, SQLite, and React.
                 </p>
-                <a
-                    href="https://github.com/jjjilot/UO-CS-classes"
-                    className="text-blue-600 hover:underline"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    View on GitHub
-                </a>
+                    <a
+                      href="https://github.com/jjjilot/UO-CS-classes"
+                      className="hover-shimmer"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      View on GitHub
+                    </a>
                 </div>
             </div>
             <div className="flex-shrink-0 w-full md:w-1/3 mt-6 md:mt-0">
