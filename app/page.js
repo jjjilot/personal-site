@@ -14,16 +14,6 @@ function ShimmerTitle({ text, className = "" }) {
   );
 }
 
-function ShimmerText({ text, className = "" }) {
-  return (
-    <h1
-      className={`text-2xl font-bold bg-gradient-to-r from-[#c82087] via-[#8821ad] via-[#187795] via-[#43cc88] to-[#dbb957] bg-clip-text text-transparent animate-shimmer ${className}`}
-    >
-      {text}
-    </h1>
-  );
-}
-
 export default function Home() {
     const projectsRef = useRef(null);
     const [vantaEffect, setVantaEffect] = useState(null);
@@ -68,12 +58,27 @@ export default function Home() {
           <div className="absolute inset-0 bg-black/00"></div>
 
           {/* Social Icons */}
+          <div className="absolute top-6 left-6 z-50">
+            <a href="/resume-tmp.pdf" target="_blank" rel="noopener noreferrer">
+              <img
+                src="/file.svg"
+                alt="Download Resume"
+                className="w-10 h-10 invert hover:rotate-12 hover:scale-110 transition-transform duration-500"
+              />
+            </a>
+          </div>
           <div className="absolute top-6 left-1/2 transform -translate-x-1/2 z-20 flex space-x-10">
             <a href="https://linkedin.com/in/josh-jilot-4620472b2/" target="_blank" rel="noopener noreferrer">
-              <img src="/linkedin-fixed.svg" alt="LinkedIn" className="w-10 h-10 invert hover:scale-110 transition-transform duration-200" />
+              <img 
+                src="/linkedin-fixed.svg" 
+                alt="LinkedIn" 
+                className="w-10 h-10 invert hover:scale-110 transition-transform duration-200" />
             </a>
             <a href="https://github.com/jjjilot" target="_blank" rel="noopener noreferrer">
-              <img src="/github.svg" alt="GitHub" className="w-10 h-10 invert hover:scale-110 transition-transform duration-200" />
+              <img 
+                src="/github.svg" 
+                alt="GitHub" 
+                className="w-10 h-10 invert hover:scale-110 transition-transform duration-200" />
             </a>
             <a href="mailto:joshjilot@gmail.com">
               <EnvelopeIcon className="w-10 h-10 text-white hover:scale-110 transition-transform duration-200" />
@@ -112,7 +117,11 @@ export default function Home() {
           <div className="flex flex-col md:flex-row items-center md:items-start text-center md:text-left max-w-2xl mx-auto mb-16 gap-8">
             <img src="/me.jpg" alt="Headshot of Josh Jilot" className="w-60 h-60 rounded-full object-cover object-left shadow-lg border-2 [border-color:#43cc88]" />
             <p className="text-lg leading-relaxed text-gray-400">
-              Hello, my name is Josh Jilot and I am a computer science student at the University of Oregon. 
+              My name is Josh Jilot and I am a computer science student at the University of Oregon. Programming has always been
+              a passion of mine, but when I'm not coding, I find time to do other fun things. In my free time, I enjoy camping,
+              playing music with various instruments, and being better than other people at online games. No matter what I'm
+              doing, I can always find enjoyment in getting to know the people around me.
+
             </p>
           </div>
 
@@ -130,10 +139,16 @@ export default function Home() {
               </p>
             </div>
             <div>
-              <h3 className="text-2xl font-semibold mb-2 tracking-widest font-light">Skills</h3>
-              <p>
+              <h3 className="text-2xl font-semibold mb-2 tracking-widest font-light">Coding Skills</h3>
+              <p className="leading-relaxed">
                 <br />
-                I love learning new technologies, building meaningful projects, and collaborating on creative solutions. Outside of coding, I enjoy stargazing, photography, and tinkering with side projects.
+                My coding journey began in Python (don't they all), where I learned OOP, basic data structures and algorithms, and
+                resolved my first merge conflict. Eventually, I moved on to C/C++, introducing me to the world of memory management
+                and the essentials of computer and OS architecture. 
+                <br />
+                <br />
+                As I became an upperclassman, I found myself exploring new concepts like web dev and database managament. I also
+                grew increasingly interested in many aspects of computer science—from machine learning to simulations and modelling.
               </p>
             </div>
           </div>
@@ -155,6 +170,18 @@ export default function Home() {
               <div><span className="inline-block w-3 h-3 mr-1 rounded bg-aurora-yellow"></span> JavaScript</div>
               <div><span className="inline-block w-3 h-3 mr-1 rounded bg-aurora-blue"></span> Other</div>
             </div>
+          </div>
+
+          <div>
+            <h3 className="text-2xl font-semibold mb-2 mt-16 tracking-widest font-light">The (Inter)personal Touch</h3>
+            <p className="leading-relaxed">
+              <br />
+              My coding journey began in Python (don't they all), where I learned OOP, basic data structures and algorithms, and
+              resolved my first merge conflict. Eventually, I moved on to C/C++, introducing me to the world of memory management
+              and the essentials of computer and OS architecture.
+              As I became an upperclassman, I found myself exploring new concepts like web dev and database managament, 
+              growing increasingly fascinated by machine learning 
+            </p>
           </div>
         </section>
 

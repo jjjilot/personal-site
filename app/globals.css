@@ -39,6 +39,10 @@ h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-sans);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 /* Custom color utility classes */
 .bg-cool-black {
   background-color: #0f1010;
@@ -107,5 +111,5 @@ h1, h2, h3, h4, h5, h6 {
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
-  animation: shimmer 5s ease-in-out infinite;
+  animation: shimmer 3s ease-in-out infinite;
 }
