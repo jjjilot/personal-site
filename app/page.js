@@ -58,31 +58,56 @@ export default function Home() {
           <div className="absolute inset-0 bg-black/00"></div>
 
           {/* Social Icons */}
-          <div className="absolute top-6 left-6 z-50">
+          <div className="absolute top-6 left-6 z-50 group">
             <a href="/resume-tmp.pdf" target="_blank" rel="noopener noreferrer">
               <img
                 src="/file.svg"
                 alt="Download Resume"
-                className="w-10 h-10 invert hover:rotate-12 hover:scale-110 transition-transform duration-500"
-              />
+                className="w-10 h-10 invert hover:rotate-12 hover:scale-110 transition-transform duration-500"/>
+              {/* Tooltip */}
+              <span className="absolute left-full top-1/2 -translate-y-1/2 ml-2 bg-gray-800 text-white text-sm px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300 delay-700 pointer-events-none whitespace-nowrap">
+                Resume
+              </span>
             </a>
           </div>
           <div className="absolute top-6 left-1/2 transform -translate-x-1/2 z-20 flex space-x-10">
-            <a href="https://linkedin.com/in/josh-jilot-4620472b2/" target="_blank" rel="noopener noreferrer">
-              <img 
-                src="/linkedin-fixed.svg" 
-                alt="LinkedIn" 
-                className="w-10 h-10 invert hover:scale-110 transition-transform duration-200" />
-            </a>
-            <a href="https://github.com/jjjilot" target="_blank" rel="noopener noreferrer">
-              <img 
-                src="/github.svg" 
-                alt="GitHub" 
-                className="w-10 h-10 invert hover:scale-110 transition-transform duration-200" />
-            </a>
-            <a href="mailto:joshjilot@gmail.com">
-              <EnvelopeIcon className="w-10 h-10 text-white hover:scale-110 transition-transform duration-200" />
-            </a>
+            {/* LinkedIn */}
+            <div className="relative group">
+              <a href="https://linkedin.com/in/josh-jilot-4620472b2/" target="_blank" rel="noopener noreferrer">
+                <img
+                  src="/linkedin-fixed.svg"
+                  alt="LinkedIn"
+                  className="w-10 h-10 invert hover:scale-110 transition-transform duration-200"
+                />
+                <span className="absolute top-full left-1/2 -translate-x-1/2 mt-2 bg-gray-800 text-white text-sm px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300 delay-700 pointer-events-none">
+                  LinkedIn
+                </span>
+              </a>
+            </div>
+
+            {/* GitHub */}
+            <div className="relative group">
+              <a href="https://github.com/jjjilot" target="_blank" rel="noopener noreferrer">
+                <img
+                  src="/github.svg"
+                  alt="GitHub"
+                  className="w-10 h-10 invert hover:scale-110 transition-transform duration-200"
+                />
+                <span className="absolute top-full left-1/2 -translate-x-1/2 mt-2 bg-gray-800 text-white text-sm px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300 delay-700 pointer-events-none">
+                  GitHub
+                </span>
+              </a>
+            </div>
+
+            {/* Email */}
+            <div className="relative group">
+              <a href="mailto:joshjilot@gmail.com">
+                <EnvelopeIcon className="w-10 h-10 text-white hover:scale-110 transition-transform duration-200" />
+                <span className="absolute top-full left-1/2 -translate-x-1/2 mt-2 bg-gray-800 text-white text-sm px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300 delay-700 pointer-events-none">
+                  Email
+                </span>
+              </a>
+            </div>
           </div>
 
           {/* Hero Text */}
@@ -353,7 +378,9 @@ export default function Home() {
         {/* Contact Section */}
         <section id="contact" className="bg-cool-black py-24 px-6 text-center">
           <h2 className="text-3xl font-semibold mb-4">Contact</h2>
-          <p className="text-gray-400">
+          <p className="text-gray-400 tracking-wide leading-relaxed">
+            Thanks for visiting my website :) 
+            <br />
             Feel free to reach out via{" "}
             <a href="mailto:joshjilot@gmail.com" className="text-blue-600 hover:underline">joshjilot@gmail.com</a> 
             {" "}or connect with me on{" "}

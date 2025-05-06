@@ -43,6 +43,10 @@ html {
   scroll-behavior: smooth;
 }
 
+.font-times {
+  font-family: 'Times New Roman', serif;
+}
+
 /* Custom color utility classes */
 .bg-cool-black {
   background-color: #0f1010;
