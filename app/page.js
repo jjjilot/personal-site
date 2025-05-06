@@ -116,11 +116,11 @@ export default function Home() {
           <div className="relative z-10 h-full flex flex-col justify-start items-center text-center text-white px-4 pt-40 sm:pt-64"
             style={{ textShadow: "2px 2px 4px rgba(0, 0, 0, 0.5)" }}>
             <h1 className="text-5xl sm:text-8xl font-bold mb-4">Josh Jilot</h1>
-            <nav className="mt-6 flex flex-wrap justify-center gap sm:gap-3 sm:space-x-8 text-lg sm:text-xl">
+            <nav className="mt-6 flex flex-wrap justify-center items-center gap-y-2 gap-x-2 sm:gap-x-8 text-lg sm:text-xl">
               <a href="#about" className="hover:underline">About</a>
-              <span className="hidden sm:inline">|</span>
+              <span>|</span>
               <a href="#projects" className="hover:underline">Projects</a>
-              <span className="hidden sm:inline">|</span>
+              <span>|</span>
               <a href="#contact" className="hover:underline">Contact</a>
             </nav>
           </div>
