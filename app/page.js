@@ -177,10 +177,9 @@ export default function Home() {
             <p className="leading-relaxed">
               <br />
               As I graduated from solo projects to working in a team, I discovered an entirely new side of programming: a
-              new experience that I enjoyed even more. Through all my work experience, I have found myself enjoying the tasks
-              and roles that get me working with and getting to know my coworkers and clients more than anything. 
-              
-              
+              social experience that I enjoyed even more. Through all my work experience, I have enjoyed the tasks
+              and roles that allow me to work with and get to know my coworkers. Embracing the collaborative aspects of programming, from 
+              creating intermodular code to bonding as a team during scrums, has added a social layer to my workflow that I thrive in.
               <br />
             </p>
           </div>
@@ -354,7 +353,7 @@ export default function Home() {
         {/* Contact Section */}
         <section id="contact" className="bg-cool-black py-24 px-6 text-center">
           <h2 className="text-3xl font-semibold mb-4">Contact</h2>
-          <p className="text-gray-700">
+          <p className="text-gray-400">
             Feel free to reach out via{" "}
             <a href="mailto:joshjilot@gmail.com" className="text-blue-600 hover:underline">joshjilot@gmail.com</a> 
             {" "}or connect with me on{" "}
@@ -363,7 +362,7 @@ export default function Home() {
         </section>
 
         {/* Footer */}
-        <footer className="text-center text-sm text-gray-500 py-8">
+        <footer className="bg-cool-black text-center text-sm text-gray-500 py-8">
           &copy; {new Date().getFullYear()} Josh Jilot
         </footer>
       </main>
