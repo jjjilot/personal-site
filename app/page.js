@@ -139,7 +139,7 @@ export default function Home() {
               </p>
             </div>
             <div>
-              <h3 className="text-2xl font-semibold mb-2 tracking-widest font-light">Coding Skills</h3>
+              <h3 className="text-2xl font-semibold mb-2 tracking-widest font-light">Coding Experience</h3>
               <p className="leading-relaxed">
                 <br />
                 My coding journey began in Python (don't they all), where I learned OOP, basic data structures and algorithms, and
@@ -176,11 +176,12 @@ export default function Home() {
             <h3 className="text-2xl font-semibold mb-2 mt-16 tracking-widest font-light">The (Inter)personal Touch</h3>
             <p className="leading-relaxed">
               <br />
-              My coding journey began in Python (don't they all), where I learned OOP, basic data structures and algorithms, and
-              resolved my first merge conflict. Eventually, I moved on to C/C++, introducing me to the world of memory management
-              and the essentials of computer and OS architecture.
-              As I became an upperclassman, I found myself exploring new concepts like web dev and database managament, 
-              growing increasingly fascinated by machine learning 
+              As I graduated from solo projects to working in a team, I discovered an entirely new side of programming: a
+              new experience that I enjoyed even more. Through all my work experience, I have found myself enjoying the tasks
+              and roles that get me working with and getting to know my coworkers and clients more than anything. 
+              
+              
+              <br />
             </p>
           </div>
         </section>
@@ -194,13 +195,10 @@ export default function Home() {
             <div className="grid gap-8 max-w-4xl mx-auto">
             {/* Project 1 */}
               <div className="rounded p-6 shadow-sm text-left cursor-pointer transition-all duration-300 hover:bg-gray-600 flex flex-col md:flex-row items-center md:items-start bg-cool-gray bg-opacity-40 backdrop-blur-sm">
-            <div className="flex-1 md:mr-6">
+                <div className="flex-1 md:mr-6">
                 <h3 className="text-xl font-bold mb-2">PatternAuth</h3>
-                <p>Three-factor authentication system with iOS + web integration.</p>
+                  <p>Cross-platform authentication system combining password, Face ID, and gesture recognition, built with SwiftUI, React, and FastAPI.</p>
                 <div className="mt-4 space-y-3">
-                <p>
-                    This project implements three-factor authentication using password, Face ID, and pattern-based login. Built with SwiftUI, FastAPI, SQLite, and React.
-                </p>
                     <a
                       href="https://github.com/jjjilot/PatternAuth"
                       className="hover-shimmer"
@@ -210,25 +208,27 @@ export default function Home() {
                       View on GitHub
                     </a>
                 </div>
-            </div>
-            <div className="flex-shrink-0 w-full md:w-1/3 mt-6 md:mt-0">
-                <img
-                src="patternauth.png"
-                alt="PatternAuth project"
-                    className="w-auto h-40 object-contain rounded"
-                />
-            </div>
+              </div>
+                <div className="flex w-full md:w-1/3 mt-6 md:mt-0 overflow-hidden">
+                  <img
+                    src="patternauth.png"
+                    alt="PatternAuth project"
+                    className="w-1/2 h-40 object-cover rounded-none m-0 p-0"
+                  />
+                  <img
+                    src="pattern-entry.png"
+                    alt="PatternAuth demo"
+                    className="w-1/2 h-40 object-cover rounded-none m-0 p-0"
+                  />
+                </div>
             </div>
 
             {/* Project 2 */}
               <div className="rounded p-6 shadow-sm text-left cursor-pointer transition-all duration-300 hover:bg-gray-600 flex flex-col md:flex-row items-center md:items-start bg-cool-gray bg-opacity-40 backdrop-blur-sm">
-            <div className="flex-1 md:mr-6">
+                <div className="flex-1 md:mr-6">
                 <h3 className="text-xl font-bold mb-2">PeaceHealth Bike Stats</h3>
-                <p>Responsive portfolio site built with Next.js and Tailwind CSS.</p>
+                  <p>Real-time bike usage dashboard using Flask, SQLite, and Plotly for PeaceHealth Rides data visualization.</p>
                 <div className="mt-4 space-y-3">
-                <p>
-                    This personal website showcases my projects, skills, and experience. Built using Next.js and styled with Tailwind CSS.
-                </p>
                     <a
                       href="https://github.com/jjjilot/PH-Bike-Stats"
                       className="hover-shimmer"
@@ -250,13 +250,10 @@ export default function Home() {
 
             {/* Project 3 */}
               <div className="rounded p-6 shadow-sm text-left cursor-pointer transition-all duration-300 hover:bg-gray-600 flex flex-col md:flex-row items-center md:items-start bg-cool-gray bg-opacity-40 backdrop-blur-sm">
-            <div className="flex-1 md:mr-6">
+                <div className="flex-1 md:mr-6">
                 <h3 className="text-xl font-bold mb-2">Personal Site</h3>
-                <p>Three-factor authentication system with iOS + web integration.</p>
+                  <p>Responsive personal portfolio built with Next.js and Tailwind CSS. Wait...is this project-ception?</p>
                 <div className="mt-4 space-y-3">
-                <p>
-                    This project implements three-factor authentication using password, Face ID, and pattern-based login. Built with SwiftUI, FastAPI, SQLite, and React.
-                </p>
                     <a
                       href="https://github.com/jjjilot/personal-site"
                       className="hover-shimmer"
@@ -269,7 +266,7 @@ export default function Home() {
             </div>
             <div className="flex-shrink-0 w-full md:w-1/3 mt-6 md:mt-0">
                 <img
-                src="observatory-fixed.jpg"
+                src="website-pic.png"
                 alt="Personal Site project"
                     className="w-auto h-40 object-contain rounded"
                 />
@@ -280,11 +277,8 @@ export default function Home() {
               <div className="rounded p-6 shadow-sm text-left cursor-pointer transition-all duration-300 hover:bg-gray-600 flex flex-col md:flex-row items-center md:items-start bg-cool-gray bg-opacity-40 backdrop-blur-sm">
                 <div className="flex-1 md:mr-6">
                   <h3 className="text-xl font-bold mb-2">OOP Red-Black Tree</h3>
-                  <p className="text-gray-700 mb-2">Three-factor authentication system with iOS + web integration.</p>
+                  <p>Object-oriented implementation of a Red-Black Tree in C++, supporting balanced insertions with automatic rebalancing and color tracking.</p>
                   <div className="mt-4 space-y-3">
-                    <p className="text-gray-600">
-                      This project implements three-factor authentication using password, Face ID, and pattern-based login. Built with SwiftUI, FastAPI, SQLite, and React.
-                    </p>
                     <a
                       href="https://github.com/jjjilot/CS330/tree/main/homework08"
                       className="hover-shimmer"
@@ -308,11 +302,8 @@ export default function Home() {
               <div className="rounded p-6 shadow-sm text-left cursor-pointer transition-all duration-300 hover:bg-gray-600 flex flex-col md:flex-row items-center md:items-start bg-cool-gray bg-opacity-40 backdrop-blur-sm">
                 <div className="flex-1 md:mr-6">
                   <h3 className="text-xl font-bold mb-2">The Duck Bank</h3>
-                  <p className="text-gray-700 mb-2">Three-factor authentication system with iOS + web integration.</p>
+                  <p>Concurrent banking system simulation in C using POSIX threads, featuring account operations with mutex-based synchronization.</p>
                   <div className="mt-4 space-y-3">
-                    <p className="text-gray-600">
-                      This project implements three-factor authentication using password, Face ID, and pattern-based login. Built with SwiftUI, FastAPI, SQLite, and React.
-                    </p>
                     <a
                       href="https://github.com/jjjilot/CS415/tree/main/project_3"
                       className="hover-shimmer"
@@ -325,7 +316,7 @@ export default function Home() {
                 </div>
                 <div className="flex-shrink-0 w-full md:w-1/3 mt-6 md:mt-0">
                   <img
-                    src="money-duck.jpg"
+                    src="multithreading.jpg"
                     alt="Duck Bank project"
                     className="w-auto h-40 object-contain rounded"
                   />
@@ -336,11 +327,8 @@ export default function Home() {
             <div className="rounded p-6 shadow-sm text-left cursor-pointer transition-all duration-300 hover:bg-gray-600 flex flex-col md:flex-row items-center md:items-start bg-cool-gray bg-opacity-40 backdrop-blur-sm">
             <div className="flex-1 md:mr-6">
                 <h3 className="text-xl font-bold mb-2">University of Oregon Portfolio</h3>
-                <p className="text-gray-700 mb-2">Three-factor authentication system with iOS + web integration.</p>
+                <p>A collection of every programming assignment from my four years at the University of Oregon. From my first Hello World, to my last pull request, the first chapter of my copmuter science journey begins and ends here.</p>
                 <div className="mt-4 space-y-3">
-                <p className="text-gray-600">
-                    This project implements three-factor authentication using password, Face ID, and pattern-based login. Built with SwiftUI, FastAPI, SQLite, and React.
-                </p>
                     <a
                       href="https://github.com/jjjilot/UO-CS-classes"
                       className="hover-shimmer"
