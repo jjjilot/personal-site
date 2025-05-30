@@ -59,7 +59,7 @@ export default function Home() {
 
           {/* Social Icons */}
           <div className="absolute top-4 left-4 z-50 group">
-            <a href="/resume-tmp.pdf" target="_blank" rel="noopener noreferrer">
+            <a href="/Resume.pdf" target="_blank" rel="noopener noreferrer">
               <img
                 src="/file.svg"
                 alt="Download Resume"
