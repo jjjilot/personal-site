@@ -303,7 +303,32 @@ export default function Home() {
             </div>
             </div>
 
-            {/* Project 4 */}
+              {/* Project 4 */}
+              <div className="rounded p-6 shadow-sm text-left cursor-pointer transition-all duration-300 hover:bg-gray-600 flex flex-col md:flex-row items-center md:items-start bg-cool-gray bg-opacity-40 backdrop-blur-sm">
+                <div className="flex-1 md:mr-6">
+                  <h3 className="text-xl font-bold mb-2">Student Dropout Prediction Webpage</h3>
+                  <p>Student dropout prediction tool built with scikit-learn, featuring an ensemble of machine learning models and custom data preprocessing pipeline.</p>
+                  <div className="mt-4 space-y-3">
+                    <a
+                      href="https://github.com/jjjilot/CS423/tree/main"
+                      className="hover-shimmer"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      View on GitHub
+                    </a>
+                  </div>
+                </div>
+                <div className="flex-shrink-0 w-full md:w-1/3 mt-6 md:mt-0">
+                  <img
+                    src="jee-screenshot.png"
+                    alt="JEE ML project"
+                    className="w-auto h-40 object-contain rounded"
+                  />
+                </div>
+              </div>
+
+            {/* Project 5 */}
               <div className="rounded p-6 shadow-sm text-left cursor-pointer transition-all duration-300 hover:bg-gray-600 flex flex-col md:flex-row items-center md:items-start bg-cool-gray bg-opacity-40 backdrop-blur-sm">
                 <div className="flex-1 md:mr-6">
                   <h3 className="text-xl font-bold mb-2">OOP Red-Black Tree</h3>
@@ -323,31 +348,6 @@ export default function Home() {
                   <img
                     src="RBtree.webp"
                     alt="RB Tree project"
-                    className="w-auto h-40 object-contain rounded"
-                  />
-                </div>
-              </div>
-
-            {/* Project 5 */}
-              <div className="rounded p-6 shadow-sm text-left cursor-pointer transition-all duration-300 hover:bg-gray-600 flex flex-col md:flex-row items-center md:items-start bg-cool-gray bg-opacity-40 backdrop-blur-sm">
-                <div className="flex-1 md:mr-6">
-                  <h3 className="text-xl font-bold mb-2">The Duck Bank</h3>
-                  <p>Concurrent banking system simulation in C using POSIX threads, featuring account operations with mutex-based synchronization.</p>
-                  <div className="mt-4 space-y-3">
-                    <a
-                      href="https://github.com/jjjilot/CS415/tree/main/project_3"
-                      className="hover-shimmer"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      View on GitHub
-                    </a>
-                  </div>
-                </div>
-                <div className="flex-shrink-0 w-full md:w-1/3 mt-6 md:mt-0">
-                  <img
-                    src="multithreading.jpg"
-                    alt="Duck Bank project"
                     className="w-auto h-40 object-contain rounded"
                   />
                 </div>
