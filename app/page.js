@@ -146,7 +146,7 @@ export default function Home() {
 
           <div className="px-4 sm:px-2 md:px-4 lg:px-8 xl:px-16">
             <div className="flex flex-col md:flex-row items-center md:items-start text-center md:text-left mx-auto mb-16 gap-8">
-              <img src="/me.jpg" alt="Headshot of Josh Jilot" className="w-60 h-60 rounded-full object-cover object-left shadow-lg border-2 [border-color:#43cc88]" />
+              <img src="/grad-family.jpg" alt="Headshot of Josh Jilot" className="w-60 h-60 rounded-full object-cover object-left shadow-lg border-2 [border-color:#43cc88]" />
               <p className="text-lg leading-relaxed text-gray-400">
                 My name is Josh Jilot and I am a computer science student at the University of Oregon. Programming has always been
                 a passion of mine, but when I'm not coding, I find time to do other fun things. In my free time, I enjoy camping,
