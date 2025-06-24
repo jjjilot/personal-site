@@ -75,7 +75,7 @@ export default function Home() {
           <div className="absolute top-6 left-1/2 transform -translate-x-1/2 z-20 flex space-x-6 sm:space-x-10">
             {/* LinkedIn */}
             <div className="relative group">
-              <a href="https://linkedin.com/in/josh-jilot-4620472b2/" target="_blank" rel="noopener noreferrer">
+              <a href="https://linkedin.com/in/josh-jilot" target="_blank" rel="noopener noreferrer">
                 <img
                   src="/linkedin-fixed.svg"
                   alt="LinkedIn"
